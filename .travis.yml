@@ -13,4 +13,5 @@ before_install:
 instal:
 - ls -la
 - npm install
+- cd node_modules
 - ls -la
