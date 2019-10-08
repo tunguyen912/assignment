@@ -2,7 +2,7 @@ language: node_js
 
 node_js:
 <<<<<<< HEAD
-	- "10.9.0"
+- "10.9.0"
 =======
   - "10.9.0"
 
@@ -12,7 +12,7 @@ cache: npm
 
 before_install:
 <<<<<<< HEAD
-	-ls -la
+-ls -la
 =======
   - ls -la
   
