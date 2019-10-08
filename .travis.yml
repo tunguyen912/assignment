@@ -3,11 +3,14 @@ language: node_js
 node_js:
 - "10.9.0"
 
-
-
 cache: npm
 
 before_install:
+- ls -la
+- mkdir dist
+- ls -la
+
+instal:
 - ls -la
 - npm install
 - ls -la
