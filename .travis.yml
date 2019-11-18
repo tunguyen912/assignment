@@ -3,11 +3,19 @@ language: node_js
 node_js:
 - "10.9.0"
 
-
-
 cache: npm
 
 before_install:
-- ls -la
+- "npm config set spin false"
+- "npm i -g now"
+
+install:
 - npm install
-- ls -la
+
+deploy:
+ provider: script
+ script: bash scripts/deploy.sh
+ skip_cleanup: true
+script:
+- npm run-script build
+- npm test
